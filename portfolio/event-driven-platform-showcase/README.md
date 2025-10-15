@@ -1,4 +1,4 @@
-🧩 1️⃣ Event-Driven Zone-Based Management Platform
+🧩 Event-Driven Zone-Based Management Platform
 
 Full-Stack Application — Django • React 19 (Vite) • PostgreSQL • Ionic (TypeScript) • Capacitor 7
 

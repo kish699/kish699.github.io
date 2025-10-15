@@ -1,4 +1,4 @@
-🌐 2️⃣ Bilingual Public Information Website & Mobile App
+🌐 Bilingual Public Information Website & Mobile App
 
 Frontend — React 18 (CRA) • Ionic (TypeScript) • Capacitor 7
 Backend — Django • PostgreSQL
