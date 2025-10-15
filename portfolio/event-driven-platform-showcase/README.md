@@ -9,13 +9,13 @@ Designed for internal organizational use — available as both a responsive web 
 
 #### 🖼️ Screenshots
 
-![Dashboard](assets/dashboard.png)
-![Reports](assets/report.png)
+![Dashboard](assets/dashboard.png?v=2)
+![Reports](assets/report.png?v=2)
 
 <div align="center">
-  <img src="assets/mobile_home.jpg" alt="Mobile Home" width="30%" style="margin:0 10px;">
-  <img src="assets/mobile_vm.jpg" alt="Mobile Dashboard" width="30%" style="margin:0 10px;">
-  <img src="assets/mobile_table.jpg" alt="Mobile Practice" width="30%" style="margin:0 10px;">
+  <img src="assets/mobile_home.jpg?v=2" alt="Mobile Home" width="30%" style="margin:0 10px;">
+  <img src="assets/mobile_vm.jpg?v=2" alt="Mobile Dashboard" width="30%" style="margin:0 10px;">
+  <img src="assets/mobile_table.jpg?v=2" alt="Mobile Practice" width="30%" style="margin:0 10px;">
 </div>
 ⚙️ Key Features
 
