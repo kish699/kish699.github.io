@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kishore | Full-Stack Developer</title>
+  <style>
+    :root {
+      --bg: #f8f9fa;
+      --card: #ffffff;
+      --text: #222;
+      --accent: #0078d7;
+    }
+    body {
+      margin: 0;
+      font-family: "Inter", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+    }
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.9rem;
+    }
+    header p {
+      color: #555;
+      margin-top: 0.3rem;
+      font-size: 1rem;
+    }
+    .intro {
+      max-width: 700px;
+      margin: 1rem auto 2rem;
+      text-align: center;
+      color: #444;
+      font-size: 1rem;
+      padding: 0 1rem;
+    }
+    .projects {
+      display: grid;
+      gap: 1.5rem;
+      max-width: 850px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+      padding: 1.5rem;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+    }
+    .card h2 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+    .card p {
+      margin-bottom: 1rem;
+    }
+    .card a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .card a:hover {
+      text-decoration: underline;
+    }
+    .contact {
+      max-width: 850px;
+      margin: 3rem auto;
+      text-align: center;
+      padding: 0 1rem;
+    }
+    .contact h2 {
+      color: var(--accent);
+    }
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+    .contact a:hover {
+      color: #005bb5;
+    }
+    footer {
+      text-align: center;
+      color: #777;
+      padding: 2rem 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Replace the src link with your real profile photo -->
+    <img src="https://avatars.githubusercontent.com/u/196317725?s=400&u=f40a632f19efef3f3f96f65eb6f1fd6ef00d5c5e&v=4" alt="Kishore Profile Photo" />
+    <h1>Kishore</h1>
+    <p>Full-Stack Developer | Django • React • Ionic • Capacitor • PostgreSQL</p>
+  </header>
+
+  <section class="intro">
+    <p>
+      I design and build scalable web and mobile applications with modern
+      frameworks and clean architecture. My focus is on event-driven systems,
+      user-centric workflows, and bilingual interfaces that connect users
+      seamlessly across web and mobile.
+    </p>
+  </section>
+
+  <section class="projects">
+    <div class="card">
+      <h2>Event-Driven Zone-Based Management Platform</h2>
+      <p>
+        A scalable full-stack system for managing users, events, and reports
+        across multiple zones. Built with Django, React 19 (Vite), Ionic (TypeScript),
+        and PostgreSQL. Includes an Android mobile app packaged using Capacitor 7.
+      </p>
+      <a href="https://github.com/kish699/event-driven-platform-showcase" target="_blank">View Project →</a>
+    </div>
+
+    <div class="card">
+      <h2>Bilingual Public Information Website & Mobile App</h2>
+      <p>
+        A bilingual (Telugu–English) information platform with event registration,
+        image gallery, and Capacitor 7 Android app. Developed using React 18 (CRA),
+        Ionic (TypeScript), and Django + PostgreSQL backend with language toggle support.
+      </p>
+      <a href="https://github.com/kish699/telugu-public-site-showcase" target="_blank">View Project →</a>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>
+      📧 <a href="mailto:kish699@gmail.com">kish699@gmail.com</a><br />
+      💼 <a href="https://www.linkedin.com/in/kish699" target="_blank">linkedin.com/in/kish699</a><br />
+      🐙 <a href="https://github.com/kish699" target="_blank">github.com/kish699</a>
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Kishore · Built with HTML + CSS · Hosted on GitHub Pages
+  </footer>
+</body>
+</html>
