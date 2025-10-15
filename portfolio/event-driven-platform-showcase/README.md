@@ -8,8 +8,15 @@ A scalable, event-driven platform built to manage users, events, and volunteers 
 Designed for internal organizational use — available as both a responsive web app and Android mobile app.
 
 #### 🖼️ Screenshots
-| ![Dashboard](assets/dashboard.png) | ![Reports](assets/report.png) | ![Mobile](assets/mobile_home.jpg) |
 
+![Dashboard](assets/dashboard.png)
+![Reports](assets/report.png)
+
+<div align="center">
+  <img src="assets/mobile_home.jpg" alt="Mobile Home" width="30%" style="margin:0 10px;">
+  <img src="assets/mobile_vm.jpg" alt="Mobile Dashboard" width="30%" style="margin:0 10px;">
+  <img src="assets/mobile_table.jpg" alt="Mobile Practice" width="30%" style="margin:0 10px;">
+</div>
 ⚙️ Key Features
 
 Zone-Based Structure: Each event, user, and report is linked to a defined zone for permissions and tracking.

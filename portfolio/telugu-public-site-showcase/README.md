@@ -10,7 +10,14 @@ Includes dedicated Telugu pages, an easy language switch tab, and an integrated 
 Designed for accessibility, clarity, and smooth performance across devices.
 
 #### 🖼️ Screenshots
-| ![Web Home](assets/home_web.png) | ![App Home](assets/mobile_home_en.jpg) | ![App Menu](assets/mobile_menu.jpg) | ![App Gallery](assets/mobile_gallery.jpg) |
+![Web Home](assets/home_web.png)
+![Web Gallery](assets/web_gallery.png)
+
+<div align="center">
+<img src="assets/mobile_home_en.jpg" alt="App Home" width="30%" style="margin:0 10px;">
+  <img src="assets/mobile_menu.jpg" alt="App Menu" width="30%" style="margin:0 10px;">
+  <img src="assets/mobile_gallery.jpg" alt="App Gallery" width="30%" style="margin:0 10px;">
+</div>
 
 
 ⚙️ Key Features
