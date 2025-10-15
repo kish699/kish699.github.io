@@ -9,6 +9,10 @@ A bilingual (Telugu–English) public information platform built for both web an
 Includes dedicated Telugu pages, an easy language switch tab, and an integrated Capacitor 7 Android app for mobile access.
 Designed for accessibility, clarity, and smooth performance across devices.
 
+#### 🖼️ Screenshots
+| ![Web Home](assets/home_web.png) | ![App Home](assets/mobile_home_en.jpg) | ![App Menu](assets/mobile_menu.jpg) | ![App Gallery](assets/mobile_gallery.jpg) |
+
+
 ⚙️ Key Features
 
 Bilingual Interface: Seamless toggle between Telugu and English.

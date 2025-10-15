@@ -7,6 +7,9 @@ Full-Stack Application — Django • React 19 (Vite) • PostgreSQL • Ionic (
 A scalable, event-driven platform built to manage users, events, and volunteers across multiple operational zones.
 Designed for internal organizational use — available as both a responsive web app and Android mobile app.
 
+#### 🖼️ Screenshots
+| ![Dashboard](assets/dashboard.png) | ![Reports](assets/report.png) | ![Mobile](assets/mobile_home.jpg) |
+
 ⚙️ Key Features
 
 Zone-Based Structure: Each event, user, and report is linked to a defined zone for permissions and tracking.
