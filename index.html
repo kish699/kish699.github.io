@@ -4,13 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kishore | Full-Stack Developer</title>
+  <title>Kishore Kumar | Digital Solutions</title>
+
   <style>
     :root {
       --bg: #f8f9fa;
       --card: #ffffff;
       --text: #222;
       --accent: #0078d7;
+      --whatsapp: #25D366;
     }
 
     body {
@@ -23,7 +25,7 @@
 
     header {
       text-align: center;
-      padding: 2rem 1rem 1rem;
+      padding: 0.9rem 2.5rem 1rem 1.5rem;
     }
 
     header img {
@@ -32,35 +34,27 @@
       border-radius: 50%;
       object-fit: cover;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin-bottom: 0;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 1.5rem;
-      padding: 0;
+      margin: 0.8rem 0 0.2rem;
+      font-size: 1.2rem;
     }
 
-    header p {
-      color: #0338aa;
-      margin-top: 0.2rem;
-      margin-bottom: 0;
-      font-size: 1rem;
+    .headline {
+      color: var(--accent);
+      font-weight: 600;
+      margin: 0.3rem 0;
     }
 
-    .intro {
-      max-width: 700px;
-      margin: 0 auto;
-      text-align: center;
-      color: #444444;
-      font-size: 1rem;
-      padding: 0;
+    .subline {
+      max-width: 750px;
+      margin: 0.6rem auto 0;
+      color: #444;
     }
 
-    .projects {
-      display: grid;
-      gap: 1.5rem;
-      max-width: 850px;
+    section {
+      max-width: 900px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
@@ -69,124 +63,298 @@
       background: var(--card);
       border-radius: 12px;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
-      padding: 1.5rem;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+      padding: 1.6rem;
+      margin-bottom: 1.5rem;
     }
 
     .card h2 {
       margin-top: 0;
       color: var(--accent);
+      font-size: 1.3rem;
     }
 
-    .card p {
-      margin-bottom: 1rem;
+    .card {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
 
-    .card a {
+    /* Desktop hover */
+    @media (hover: hover) {
+      .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+      }
+    }
+
+    /* Mobile tap feedback */
+    .card:active {
+      transform: scale(0.98);
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin: 0.6rem 0 0;
+    }
+
+    li {
+      margin-bottom: 0.45rem;
+    }
+
+    .details-link {
+      margin-top: 1.2rem;
+    }
+
+    .details-link a {
+      display: inline-block;
+      padding: 0.35rem 0.8rem;
+      border-radius: 6px;
+      background: rgba(0, 120, 215, 0.08);
       color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .details-link a:hover {
+      background: rgba(0, 120, 215, 0.15);
+      transform: translateX(4px);
+    }
+
+
+    .project {
+      margin-bottom: 1.2rem;
+    }
+
+    .project a {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .details-card {
+      border: 1px dashed rgba(0, 120, 215, 0.25);
+      background: linear-gradient(135deg, #f5f9ff, #ffffff);
+    }
+
+    .cta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.75rem;
+      margin: 3rem auto 2rem;
+    }
+
+    .cta a {
+      min-width: 120px;
+      text-align: center;
+      padding: 0.75rem 0;
+      border-radius: 8px;
       text-decoration: none;
       font-weight: 600;
     }
 
-    .card a:hover {
-      text-decoration: underline;
+    .email-btn {
+      background: var(--accent);
+      color: #fff;
     }
 
-    .contact {
-      max-width: 850px;
-      margin: 0 auto;
-      text-align: center;
-      padding: 0;
-    }
-
-    .contact h2 {
-      color: var(--accent);
-      padding: 0;
-      margin: 0;
-    }
-
-    .contact p {
-      padding: 0;
-      margin: 0;
-    }
-
-    .contact a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.2s ease;
-    }
-
-    .contact a:hover {
-      color: #005bb5;
+    .whatsapp-btn {
+      background: var(--whatsapp);
+      color: #fff;
     }
 
     footer {
       text-align: center;
       color: #777;
-      padding: 2rem 0;
+      padding: 2rem 1rem;
       font-size: 0.9rem;
+    }
+
+    .mobile-break {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 0.8rem;
+      }
+
+      .headline {
+        font-size: 14px;
+        text-align: center;
+      }
+
+      .subline {
+        text-align: justify;
+      }
+
+      .card {
+        margin: 10px 10px 20px 10px;
+        border-radius: 10px;
+        padding: 1.6rem;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+      }
+
+      .card:nth-child(1) {
+        background: linear-gradient(135deg, #e3f2fd, #f8fbff);
+      }
+
+      .card:nth-child(2) {
+        background: linear-gradient(135deg, #e8f5e9, #f7fcf8);
+      }
+
+      .card:nth-child(3) {
+        background: linear-gradient(135deg, #fff3e0, #fffaf2);
+      }
+
+      .card:nth-child(4) {
+        background: linear-gradient(135deg, #f3e5f5, #faf4fb);
+      }
+
+      .card:nth-child(5) {
+        background: linear-gradient(135deg, #e0f2f1, #f4fbfa);
+      }
+
+      .cta {
+        margin: 0;
+        padding: 0;
+      }
+
+      .cta a {
+        min-width: 110px;
+        font-size: 0.95rem;
+      }
+
+      .service-card h2 {
+        font-size: 1.15rem;
+      }
+
+      .mobile-break {
+        display: inline;
+      }
+
+      footer {
+        padding: 0;
+        margin: 30px 0 0 0;
+        font-size: 0.8rem;
+      }
+
     }
   </style>
 </head>
 
 <body>
+
   <header>
-    <!-- Replace the src link with your real profile photo -->
-    <img src="https://avatars.githubusercontent.com/u/196317725?s=400&u=f40a632f19efef3f3f96f65eb6f1fd6ef00d5c5e&v=4"
-      alt="Kishore Profile Photo" />
+    <img src="https://avatars.githubusercontent.com/u/196317725?s=400" alt="Kishore Kumar Dodda" />
     <h1>Kishore Kumar Dodda</h1>
-    <p><strong>Full-Stack Developer | Python • Django • React • Ionic • Capacitor • PostgreSQL</strong></p>
+    <p class="headline"> End-to-End <span class="mobile-break"><br></span> Digital Services for Growing Organizations
+    </p>
+    <p class="subline">
+      I provide structured, end-to-end digital solutions for businesses, institutions,
+      trusts, and NGOs—focused on operational efficiency, system reliability,
+      and long-term scalability.
+    </p>
   </header>
 
-  <section class="intro">
-    <p>
-      I design and build scalable web and mobile applications with modern
-      frameworks and clean architecture. My focus is on event-driven systems,
-      user-centric workflows, and bilingual interfaces that connect users
-      seamlessly across web and mobile.
+  <section class="card">
+    <h2>Services</h2>
+    <ul>
+      <li>Business websites & online presence</li>
+      <li>Business management & process automation (sales, accounts, inventory, HR)</li>
+      <li>Custom software for organizations</li>
+      <li>Education & training platforms</li>
+      <li>Mobile app solutions</li>
+      <li>Communication & engagement systems</li>
+      <li>AI-powered business assistance</li>
+      <li>Digital transformation for traditional businesses</li>
+      <li>Secure hosting, deployment & ongoing system support</li>
+    </ul>
+    <!-- <p style="margin-top: 1rem;">
+      <a href="portfolio/services.html" style="color:#0078d7; font-weight:600; text-decoration:none;">
+        View detailed services →
+      </a> -->
+    <p class="details-link">
+      <a href="portfolio/services.html">
+        Explore service details →
+      </a>
     </p>
   </section>
 
-  <section class="projects">
-    <div class="card">
-      <h2>Event-Driven Zone-Based Management Platform & Mobile App</h2>
+  <section class="card">
+    <h2>Delivered Solutions</h2>
+
+    <div class="project">
+      <strong>Zone-Based Event & Volunteer Management System</strong>
       <p>
-        A scalable full-stack system for managing users, events, and reports
-        across multiple zones. Built with Python (Django), React 19 (Vite), Ionic (TypeScript),
-        and PostgreSQL. Includes an Android mobile app packaged using Capacitor 7.
+        Delivered a centralized digital platform to manage volunteers, members, events,
+        reporting, and administration across multiple operational zones,
+        including a mobile application for field-level access.
       </p>
-      <a href="https://github.com/kish699/event-driven-platform-showcase" target="_blank"> View Project → </a>
+      <a href="https://github.com/kish699/event-driven-platform-showcase" target="_blank">
+        View solution reference →
+      </a>
     </div>
 
-    <div class="card">
-      <h2>Bilingual Public Information Website & Mobile App</h2>
+    <div class="project">
+      <strong>Bilingual Public Information & Engagement Platform</strong>
       <p>
-        A bilingual (Telugu–English) information platform with event registration,
-        image gallery, and Capacitor 7 Android app. Developed using React 18 (CRA),
-        Ionic (TypeScript), and Python (Django), + PostgreSQL backend with language toggle support.
+        Delivered a bilingual (English–Telugu) digital platform for public
+        communication, event updates, registrations, and media sharing,
+        accessible via web and Android mobile application.
       </p>
-      <a href="https://github.com/kish699/telugu-public-site-showcase" target="_blank">View Project →</a>
+      <a href="https://github.com/kish699/telugu-public-site-showcase" target="_blank">
+        View solution reference →
+      </a>
     </div>
   </section>
 
-  <section class="contact">
-    <h2>Contact</h2>
+  <section class="card">
+    <h2>Delivery Approach</h2>
     <p>
-      🐙 <a href="https://github.com/kish699" target="_blank">github.com/kish699</a><br />
-      📧 <a href="mailto:kish699@gmail.com">kish699@gmail.com</a><br />
-      💼 <a href="https://www.linkedin.com/in/kish699" target="_blank">linkedin.com/in/kish699</a>
+      Engagements are requirement-driven and scope-defined. Each project is planned,
+      executed, and delivered with a focus on stability, usability, and measurable outcomes.
     </p>
+    <p>
+      Ongoing support and maintenance options are available to ensure long-term
+      performance, security, and operational continuity.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Clients & Organizations</h2>
+    <p>
+      Businesses, institutions, trusts, NGOs, and growing organizations
+      seeking reliable digital systems to modernize operations and scale efficiently.
+    </p>
+  </section>
+
+  <section class="card details-card">
+    <h2>Need Detailed Service Information?</h2>
+    <p>
+      View the complete list of service offerings, scope areas, and delivery capabilities
+      across business systems, automation, mobile apps, AI assistance, and ongoing support.
+    </p>
+
+    <p class="details-link">
+      <a href="portfolio/services.html">
+        View detailed services →
+      </a>
+    </p>
+  </section>
+
+  <section class="cta">
+    <a class="email-btn" href="mailto:kish699@gmail.com">Email</a>
+    <a class="whatsapp-btn"
+      href="https://wa.me/919642439699?text=Hello%20Kishore,%20I%20would%20like%20to%20discuss%20a%20digital%20project."
+      target="_blank">
+      WhatsApp
+    </a>
   </section>
 
   <footer>
-    © 2025 Kishore · Built with HTML + CSS · Hosted on GitHub Pages
+    Digital Solutions · Hosted on GitHub Pages
   </footer>
+
 </body>
 
 </html>
