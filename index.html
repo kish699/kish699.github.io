@@ -77,7 +77,6 @@
       transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
 
-    /* Desktop hover */
     @media (hover: hover) {
       .card:hover {
         transform: translateY(-6px);
@@ -85,7 +84,6 @@
       }
     }
 
-    /* Mobile tap feedback */
     .card:active {
       transform: scale(0.98);
     }
@@ -119,9 +117,12 @@
       transform: translateX(4px);
     }
 
-
     .project {
-      margin-bottom: 1.2rem;
+      margin-bottom: 1.8rem;
+    }
+
+    .project:last-child {
+      margin-bottom: 0;
     }
 
     .project a {
@@ -237,7 +238,6 @@
         margin: 30px 0 0 0;
         font-size: 0.8rem;
       }
-
     }
   </style>
 </head>
@@ -246,9 +246,14 @@
 
   <header>
     <img src="https://avatars.githubusercontent.com/u/196317725?s=400" alt="Kishore Kumar Dodda" />
+
     <h1>Kishore Kumar Dodda</h1>
-    <p class="headline"> End-to-End <span class="mobile-break"><br></span> Digital Services for Growing Organizations
+
+    <p class="headline">
+      End-to-End <span class="mobile-break"><br></span>
+      Digital Services for Growing Organizations
     </p>
+
     <p class="subline">
       I provide structured, end-to-end digital solutions for businesses, institutions,
       trusts, and NGOs—focused on operational efficiency, system reliability,
@@ -256,8 +261,10 @@
     </p>
   </header>
 
+
   <section class="card">
     <h2>Services</h2>
+
     <ul>
       <li>Business websites & online presence</li>
       <li>Business management & process automation (sales, accounts, inventory, HR)</li>
@@ -269,10 +276,7 @@
       <li>Digital transformation for traditional businesses</li>
       <li>Secure hosting, deployment & ongoing system support</li>
     </ul>
-    <!-- <p style="margin-top: 1rem;">
-      <a href="portfolio/services.html" style="color:#0078d7; font-weight:600; text-decoration:none;">
-        View detailed services →
-      </a> -->
+
     <p class="details-link">
       <a href="portfolio/services.html">
         Explore service details →
@@ -280,56 +284,130 @@
     </p>
   </section>
 
+
   <section class="card">
     <h2>Delivered Solutions</h2>
 
+
     <div class="project">
-      <strong>Zone-Based Event & Volunteer Management System</strong>
+      <strong>SphoorthiSeva — Volunteer & CRM Platform</strong>
+
       <p>
-        Delivered a centralized digital platform to manage volunteers, members, events,
-        reporting, and administration across multiple operational zones,
-        including a mobile application for field-level access.
+        Built a centralized volunteer management and CRM platform for managing
+        volunteers, events, registrations, visitors, teams, reporting, and
+        communication across multiple operational zones, with a companion
+        Android application for field-level access.
       </p>
-      <a href="https://github.com/kish699/event-driven-platform-showcase" target="_blank">
+
+      <a href="https://play.google.com/store/apps/details?id=org.sphoorthikutumbam.app&pcampaignid=web_share" target="_blank">
+        View Google Play Store App →
+      </a>
+    </div>
+
+
+    <div class="project">
+      <strong>Sphoorthi Kutumabm — Multi-language Public Platform</strong>
+
+      <p>
+        Built a bilingual Telugu–English public platform with dynamic event,
+        image, audio, and media content, along with a companion Android
+        application featuring audio playback, daily quote sharing, and
+        push notifications.
+      </p>
+
+      <a href="https://www.sphoorthikutumbam-telangana.org" target="_blank">
+        Visit website →
+      </a>
+    </div>
+
+
+    <div class="project">
+      <strong>Laundry & Dry-Cleaning Business Management Platform</strong>
+
+      <p>
+        Developed a multi-branch business management platform and Android
+        application for a laundry and dry-cleaning business operating across
+        10 branches, covering orders, invoices, role-based access,
+        attendance, payroll, and automated WhatsApp customer notifications.
+      </p>
+
+      <a href="https://github.com/kish699/dry-cleaning-business-management-platform-showcase" target="_blank">
         View solution reference →
       </a>
     </div>
 
+
     <div class="project">
-      <strong>Bilingual Public Information & Engagement Platform</strong>
+      <strong>Laundry & Dry-Cleaning Public Website</strong>
+
       <p>
-        Delivered a bilingual (English–Telugu) digital platform for public
-        communication, event updates, registrations, and media sharing,
-        accessible via web and Android mobile application.
+        Developed a responsive public-facing website for a multi-branch
+        laundry and dry-cleaning business, providing customers with service
+        information, branch details, and an accessible online presence.
       </p>
-      <a href="https://github.com/kish699/telugu-public-site-showcase" target="_blank">
-        View solution reference →
+
+      <a href="https://balusmodern.com/" target="_blank">
+        Visit website →
       </a>
     </div>
+
+
+    <div class="project">
+      <strong>SphoorthiQ — Business Website</strong>
+
+      <p>
+        Designed and developed a responsive business website with a
+        mobile-friendly interface for presenting the organization's services,
+        information, and online presence.
+      </p>
+
+      <a href="https://sphoorthiq.com/" target="_blank">
+        Visit website →
+      </a>
+    </div>
+
+    <!-- <div class="project">
+      <strong>Volunteer Management Portal</strong>
+
+      <p>
+        Currently developing a volunteer management portal using FastAPI,
+        React.js, and PostgreSQL, with features for volunteer registration,
+        profiles, event management, team coordination, and volunteer
+        activity tracking.
+      </p>
+    </div> -->
+
   </section>
+
 
   <section class="card">
     <h2>Delivery Approach</h2>
+
     <p>
       Engagements are requirement-driven and scope-defined. Each project is planned,
       executed, and delivered with a focus on stability, usability, and measurable outcomes.
     </p>
+
     <p>
       Ongoing support and maintenance options are available to ensure long-term
       performance, security, and operational continuity.
     </p>
   </section>
 
+
   <section class="card">
     <h2>Clients & Organizations</h2>
+
     <p>
       Businesses, institutions, trusts, NGOs, and growing organizations
       seeking reliable digital systems to modernize operations and scale efficiently.
     </p>
   </section>
 
+
   <section class="card details-card">
     <h2>Need Detailed Service Information?</h2>
+
     <p>
       View the complete list of service offerings, scope areas, and delivery capabilities
       across business systems, automation, mobile apps, AI assistance, and ongoing support.
@@ -342,14 +420,19 @@
     </p>
   </section>
 
+
   <section class="cta">
-    <a class="email-btn" href="mailto:kish699@gmail.com">Email</a>
+    <a class="email-btn" href="mailto:kish699@gmail.com">
+      Email
+    </a>
+
     <a class="whatsapp-btn"
       href="https://wa.me/919642439699?text=Hello%20Kishore,%20I%20would%20like%20to%20discuss%20a%20digital%20project."
       target="_blank">
       WhatsApp
     </a>
   </section>
+
 
   <footer>
     Digital Solutions · Hosted on GitHub Pages
