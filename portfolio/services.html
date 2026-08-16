@@ -2,418 +2,207 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="End-to-end digital services for businesses, institutions, trusts, NGOs, and organizations.">
     <title>Services | Digital Solutions</title>
-
-    <style>
-        :root {
-            --bg: #f8f9fa;
-            --card: #ffffff;
-            --text: #222;
-            --accent: #0078d7;
-        }
-
-        body {
-            margin: 0;
-            font-family: "Inter", Arial, sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-        }
-
-        header {
-            text-align: center;
-            padding: 2.5rem 1rem 1.5rem;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 1.8rem;
-            color: var(--accent);
-        }
-
-        header p {
-            max-width: 800px;
-            margin: 0.8rem auto 0;
-            color: #444;
-            font-size: 1rem;
-        }
-
-        section {
-            max-width: 1000px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        .service-card {
-            background: var(--card);
-            border-radius: 12px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
-            padding: 1.8rem;
-            margin-bottom: 1.6rem;
-        }
-
-
-        /* Desktop hover */
-        @media (hover: hover) {
-            .service-card:hover {
-                transform: translateY(-6px);
-                box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
-            }
-        }
-
-        /* Mobile tap feedback */
-        .service-card:active {
-            transform: scale(0.98);
-        }
-
-        .service-card h2 {
-            margin-top: 0;
-            color: var(--accent);
-            font-size: 1.35rem;
-        }
-
-        .service-card p {
-            margin: 0.4rem 0 0.8rem;
-            color: #444;
-            font-weight: 500;
-        }
-
-        ul {
-            padding-left: 1.2rem;
-            margin: 0;
-        }
-
-        li {
-            margin-bottom: 0.45rem;
-        }
-
-        .cta {
-            text-align: center;
-            margin: 3rem 0 2rem;
-        }
-
-        .cta a {
-            display: inline-block;
-            padding: 0.9rem 1.8rem;
-            background: var(--accent);
-            color: #fff;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .cta {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 0.75rem;
-            margin: 3rem auto 2rem;
-        }
-
-        .cta a {
-            min-width: 120px;
-            text-align: center;
-            padding: 0.75rem 0;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .email-btn {
-            background: var(--accent);
-            color: #fff;
-        }
-
-        .whatsapp-btn {
-            background: var(--whatsapp);
-            color: #fff;
-        }
-
-        .back-nav {
-            max-width: 1000px;
-            margin: 1.2rem auto 0;
-            padding: 0 1rem;
-            text-align: center;
-        }
-
-        .back-nav a {
-            color: #0078d7;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.95rem;
-        }
-
-        .back-nav a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            color: #777;
-            padding: 2rem 1rem;
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 600px) {
-            header {
-                text-align: center;
-                padding: 20px 0 0 0;
-                margin: 0;
-            }
-
-            header h1 {
-                margin: 0;
-                font-size: 1rem;
-                color: var(--accent);
-            }
-
-            header p {
-                font-size: 1rem;
-                text-align: justify;
-                padding: 0px 10px 0px 10px;
-            }
-
-            .service-card {
-                /* background: var(--card); */
-                border-radius: 7px;
-                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
-                margin: 0 0 20px 0;
-                padding: 10px;
-            }
-
-            .service-card:nth-child(1) {
-                background: linear-gradient(135deg, #e3f2fd, #f8fbff);
-                /* blue */
-            }
-
-            .service-card:nth-child(2) {
-                background: linear-gradient(135deg, #e8f5e9, #f7fcf8);
-                /* green */
-            }
-
-            .service-card:nth-child(3) {
-                background: linear-gradient(135deg, #fff3e0, #fffaf2);
-                /* orange */
-            }
-
-            .service-card:nth-child(4) {
-                background: linear-gradient(135deg, #f3e5f5, #faf4fb);
-                /* purple */
-            }
-
-            .service-card:nth-child(5) {
-                background: linear-gradient(135deg, #e0f2f1, #f4fbfa);
-                /* teal */
-            }
-
-            .service-card:nth-child(6) {
-                background: linear-gradient(135deg, #e1f5fe, #f6fbfe);
-                /* sky blue */
-            }
-
-            .service-card:nth-child(7) {
-                background: linear-gradient(135deg, #fce4ec, #fff6f9);
-                /* soft pink */
-            }
-
-            .service-card:nth-child(8) {
-                background: linear-gradient(135deg, #f1f8e9, #f9fcf5);
-                /* lime */
-            }
-
-            .service-card:nth-child(9) {
-                background: linear-gradient(135deg, #ede7f6, #f7f4fb);
-                /* indigo */
-            }
-
-            .service-card:nth-child(10) {
-                background: linear-gradient(135deg, #fffde7, #fffef5);
-                /* light yellow */
-            }
-
-
-            .service-card h2 {
-                margin-top: 0;
-                color: var(--accent);
-                font-size: 1.2rem;
-                font-size: 16px;
-            }
-
-            .service-card p {
-                margin: 0.4rem 0 0.8rem;
-                color: #444;
-                font-weight: 500;
-            }
-
-            .cta {
-                margin: 0;
-                padding: 0;
-            }
-
-            .cta a {
-                min-width: 110px;
-                font-size: 0.95rem;
-            }
-
-            footer {
-                padding: 0;
-                margin: 30px 0 0 0;
-                font-size: 0.8rem;
-            }
-
-        }
-    </style>
+    <link rel="stylesheet" href="services.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>End-to-End Digital Services</h1>
-        <p>
-            We design and deliver complete digital solutions for businesses,
-            institutions, trusts, NGOs, and organizations. Services are provided
-            based on defined scope, operational requirements, and engagement model.
-        </p>
+    <header class="hero">
+        <nav class="top-nav">
+            <a href="../index.html" class="back-link">← Home</a>
+            <span class="nav-label">Digital Services</span>
+        </nav>
+
+        <div class="hero-content">
+            <span class="eyebrow">WHAT I CAN BUILD FOR YOU</span>
+            <h1>End-to-End <span>Digital Services</span></h1>
+            <p>
+                Practical digital solutions designed around your actual business,
+                operational requirements, and long-term growth.
+            </p>
+        </div>
     </header>
 
-    <section>
+    <main class="services-section">
 
-        <div class="service-card">
-            <h2>1. Business Website & Online Presence</h2>
-            <p>Establishing credibility and visibility through professional digital presence.</p>
-            <ul>
-                <li>Company websites</li>
-                <li>Institutional / Trust / NGO websites</li>
-                <li>Multi-language websites (English & Telugu)</li>
-                <li>Website maintenance & content updates</li>
-            </ul>
+        <div class="section-heading">
+            <span>01 — SERVICES</span>
+            <h2>From idea to a working digital system.</h2>
+            <p>
+                Whether you need a professional website, an internal platform,
+                mobile application, automation, or ongoing technical support,
+                solutions are built around the way your organization actually works.
+            </p>
         </div>
 
-        <div class="service-card">
-            <h2>2. Business Management & Automation</h2>
-            <p>Streamlining daily operations and reducing manual effort.</p>
-            <ul>
-                <li>Sales, purchase, inventory & accounts management</li>
-                <li>Employee & HR management</li>
-                <li>Customer & vendor tracking</li>
-                <li>Customized workflows aligned with business processes</li>
-            </ul>
+        <div class="services-grid">
+
+            <article class="service-card">
+                <div class="card-number">01</div>
+                <div class="icon">◈</div>
+                <h3>Business Website &amp; Online Presence</h3>
+                <p>Establishing credibility and visibility through a professional digital presence.</p>
+                <ul>
+                    <li>Company websites</li>
+                    <li>Institutional / Trust / NGO websites</li>
+                    <li>Multi-language websites (English &amp; Telugu)</li>
+                    <li>Website maintenance &amp; content updates</li>
+                </ul>
+            </article>
+
+            <article class="service-card">
+                <div class="card-number">02</div>
+                <div class="icon">⌘</div>
+                <h3>Business Management &amp; Automation</h3>
+                <p>Streamlining daily operations and reducing manual effort.</p>
+                <ul>
+                    <li>Sales, purchase, inventory &amp; accounts management</li>
+                    <li>Employee &amp; HR management</li>
+                    <li>Customer &amp; vendor tracking</li>
+                    <li>Customized workflows aligned with business processes</li>
+                </ul>
+            </article>
+
+            <article class="service-card">
+                <div class="card-number">03</div>
+                <div class="icon">▦</div>
+                <h3>Custom Software for Organizations</h3>
+                <p>Tailored software solutions aligned with organizational structure.</p>
+                <ul>
+                    <li>Internal portals</li>
+                    <li>Department-wise dashboards</li>
+                    <li>Role-based access systems</li>
+                    <li>Data management solutions</li>
+                    <li>Approval workflows &amp; reporting systems</li>
+                </ul>
+            </article>
+
+            <article class="service-card">
+                <div class="card-number">04</div>
+                <div class="icon">◇</div>
+                <h3>Education &amp; Training Platforms</h3>
+                <p>Digital platforms for learning, training, and institutional management.</p>
+                <ul>
+                    <li>Online course platforms</li>
+                    <li>Student management systems</li>
+                    <li>Trainer / teacher portals</li>
+                    <li>Online tests &amp; certifications</li>
+                    <li>End-to-end institution digital transformation</li>
+                </ul>
+            </article>
+
+            <article class="service-card">
+                <div class="card-number">05</div>
+                <div class="icon">⌁</div>
+                <h3>Mobile App Solutions</h3>
+                <p>Extending services and operations to mobile users.</p>
+                <ul>
+                    <li>Android mobile applications</li>
+                    <li>Integrated app + website solutions</li>
+                </ul>
+            </article>
+
+            <article class="service-card">
+                <div class="card-number">06</div>
+                <div class="icon">↗</div>
+                <h3>Communication &amp; Engagement</h3>
+                <p>Structured communication across customers, teams, and stakeholders.</p>
+                <ul>
+                    <li>Internal team chat systems</li>
+                    <li>Automated email communication</li>
+                    <li>WhatsApp notifications &amp; alerts</li>
+                    <li>Appointment reminders</li>
+                    <li>Order &amp; payment updates</li>
+                    <li>Bulk announcements</li>
+                </ul>
+            </article>
+
+            <article class="service-card featured">
+                <div class="card-number">07</div>
+                <div class="icon">✦</div>
+                <span class="featured-label">SMART AUTOMATION</span>
+                <h3>AI-Powered Business Assistance</h3>
+                <p>Intelligent systems to improve efficiency and reduce operational load.</p>
+                <ul>
+                    <li>Website chat assistants</li>
+                    <li>Customer support automation</li>
+                    <li>Knowledge-based Q&amp;A systems</li>
+                    <li>Internal staff assistants</li>
+                    <li>Data-driven insights &amp; suggestions</li>
+                </ul>
+            </article>
+
+            <article class="service-card">
+                <div class="card-number">08</div>
+                <div class="icon">↻</div>
+                <h3>Digital Transformation for Traditional Businesses</h3>
+                <p>Transitioning manual and offline processes into structured digital systems.</p>
+                <ul>
+                    <li>Paper-to-digital process conversion</li>
+                    <li>Manual work automation</li>
+                    <li>Centralized digital records</li>
+                    <li>Step-by-step digital adoption</li>
+                    <li>Staff training &amp; ongoing support</li>
+                </ul>
+            </article>
+
+            <article class="service-card">
+                <div class="card-number">09</div>
+                <div class="icon">∞</div>
+                <h3>Ongoing Support &amp; Growth</h3>
+                <p>Long-term support beyond initial project delivery.</p>
+                <ul>
+                    <li>System maintenance</li>
+                    <li>Feature enhancements</li>
+                    <li>Performance monitoring</li>
+                    <li>Data backup &amp; security</li>
+                    <li>Long-term technical support contracts</li>
+                </ul>
+            </article>
+
+            <article class="service-card">
+                <div class="card-number">10</div>
+                <div class="icon">⌁</div>
+                <h3>Hosting, Deployment &amp; System Reliability</h3>
+                <p>Ensuring systems remain secure, scalable, and operational.</p>
+                <ul>
+                    <li>Application hosting &amp; go-live support</li>
+                    <li>Cloud deployment &amp; environment setup</li>
+                    <li>Performance optimization</li>
+                    <li>Data security, backups &amp; recovery</li>
+                    <li>Scaling support as usage grows</li>
+                </ul>
+            </article>
+
         </div>
 
-        <div class="service-card">
-            <h2>3. Custom Software for Organizations</h2>
-            <p>Tailored software solutions aligned with organizational structure.</p>
-            <ul>
-                <li>Internal portals</li>
-                <li>Department-wise dashboards</li>
-                <li>Role-based access systems</li>
-                <li>Data management solutions</li>
-                <li>Approval workflows & reporting systems</li>
-            </ul>
-        </div>
+        <section class="cta-section">
+            <div>
+                <!-- <span class="eyebrow">LET'S BUILD SOMETHING USEFUL</span> -->
+                <h2>Have a digital project in mind?</h2>
+                <p>Tell me what you need. We can discuss the scope and the right approach.</p>
+            </div>
 
-        <div class="service-card">
-            <h2>4. Education & Training Platforms</h2>
-            <p>Digital platforms for learning, training, and institutional management.</p>
-            <ul>
-                <li>Online course platforms</li>
-                <li>Student management systems</li>
-                <li>Trainer / teacher portals</li>
-                <li>Online tests & certifications</li>
-                <li>End-to-end institution digital transformation</li>
-            </ul>
-        </div>
+            <div class="cta-actions">
+                <a class="btn btn-primary" href="mailto:kish699@gmail.com">Email Me <span>→</span></a>
+                <a class="btn btn-whatsapp"
+                    href="https://wa.me/919642439699?text=Hello%20Kishore,%20I%20would%20like%20to%20discuss%20a%20digital%20project."
+                    target="_blank" rel="noopener noreferrer">WhatsApp <span>↗</span></a>
+            </div>
+        </section>
 
-        <div class="service-card">
-            <h2>5. Mobile App Solutions</h2>
-            <p>Extending services and operations to mobile users.</p>
-            <ul>
-                <li>Android mobile applications</li>
-                <li>Integrated app + website solutions</li>
-            </ul>
-        </div>
-
-        <div class="service-card">
-            <h2>6. Communication & Engagement</h2>
-            <p>Structured communication across customers, teams, and stakeholders.</p>
-            <ul>
-                <li>Internal team chat systems</li>
-                <li>Automated email communication</li>
-                <li>WhatsApp notifications & alerts</li>
-                <li>Appointment reminders</li>
-                <li>Order & payment updates</li>
-                <li>Bulk announcements</li>
-            </ul>
-        </div>
-
-        <div class="service-card">
-            <h2>7. AI-Powered Business Assistance</h2>
-            <p>Intelligent systems to improve efficiency and reduce operational load.</p>
-            <ul>
-                <li>Website chat assistants</li>
-                <li>Customer support automation</li>
-                <li>Knowledge-based Q&A systems</li>
-                <li>Internal staff assistants</li>
-                <li>Data-driven insights & suggestions</li>
-            </ul>
-        </div>
-
-        <div class="service-card">
-            <h2>8. Digital Transformation for Traditional Businesses</h2>
-            <p>Transitioning manual and offline processes into structured digital systems.</p>
-            <ul>
-                <li>Paper-to-digital process conversion</li>
-                <li>Manual work automation</li>
-                <li>Centralized digital records</li>
-                <li>Step-by-step digital adoption</li>
-                <li>Staff training & ongoing support</li>
-            </ul>
-        </div>
-
-        <div class="service-card">
-            <h2>9. Ongoing Support & Growth</h2>
-            <p>Long-term support beyond initial project delivery.</p>
-            <ul>
-                <li>System maintenance</li>
-                <li>Feature enhancements</li>
-                <li>Performance monitoring</li>
-                <li>Data backup & security</li>
-                <li>Long-term technical support contracts</li>
-            </ul>
-        </div>
-
-        <div class="service-card">
-            <h2>10. Hosting, Deployment & System Reliability</h2>
-            <p>Ensuring systems remain secure, scalable, and operational.</p>
-            <ul>
-                <li>Application hosting & go-live support</li>
-                <li>Cloud deployment & environment setup</li>
-                <li>Performance optimization</li>
-                <li>Data security, backups & recovery</li>
-                <li>Scaling support as usage grows</li>
-            </ul>
-        </div>
-
-    </section>
-
-    <section class="cta">
-        <a class="email-btn" href="mailto:kish699@gmail.com">Email</a>
-        <a class="whatsapp-btn"
-            href="https://wa.me/919642439699?text=Hello%20Kishore,%20I%20would%20like%20to%20discuss%20a%20digital%20project."
-            target="_blank">
-            WhatsApp
-        </a>
-    </section>
-
-    <nav class="back-nav">
-        <a href="../index.html">← Back to Home</a>
-    </nav>
-
+        <nav class="back-nav">
+            <a href="../index.html">← Back to Home</a>
+        </nav>
+    </main>
 
     <footer>
-        Detailed Service Offerings
+        <p>Detailed Service Offerings</p>
     </footer>
 
 </body>
