@@ -129,3 +129,9 @@ The web platform was extended to Android using **Capacitor**, allowing the busin
 The production application is **not publicly accessible** because it contains private business, customer, and employee information.
 
 This repository is a **project showcase** containing sanitized screenshots and technical documentation only.
+
+<p align="center">
+  <a href="https://kish699.github.io/">
+    ← Back to Portfolio
+  </a>
+</p>
